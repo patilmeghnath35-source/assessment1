@@ -1,0 +1,184 @@
+23s1103@o-lt-004705 task:1 % cd ..
+23s1103@o-lt-004705 desktop % mkdir task2
+23s1103@o-lt-004705 desktop % cd task2 
+23s1103@o-lt-004705 task2 % cd ..
+23s1103@o-lt-004705 desktop % mkdir suprise
+23s1103@o-lt-004705 desktop % cd suprise 
+23s1103@o-lt-004705 suprise % git init
+Initialized empty Git repository in /Users/23s1103/Desktop/suprise/.git/
+23s1103@o-lt-004705 suprise % git config user.name "patil"                                 
+23s1103@o-lt-004705 suprise % git config user.email "patil@gmail.com"
+23s1103@o-lt-004705 suprise % git config user.email                  
+patil@gmail.com
+23s1103@o-lt-004705 suprise % git config user.name  
+patil
+23s1103@o-lt-004705 suprise % touch apple.txt micro.txt
+23s1103@o-lt-004705 suprise % ls
+apple.txt	micro.txt
+23s1103@o-lt-004705 suprise % git add .                              
+23s1103@o-lt-004705 suprise % git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   apple.txt
+	new file:   micro.txt
+
+23s1103@o-lt-004705 suprise % cd ..                                               
+23s1103@o-lt-004705 desktop % git clone https://github.com/patilmeghnath35-source/surprise.git
+Cloning into 'surprise'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+23s1103@o-lt-004705 desktop % ls
+cheery1							rebase1
+come							Sentinal Key.txt
+exam							Sentinel-Release-25-3-4-8365_macos_v25_3_4_8365 1.pkg
+exam1							stash
+exam3							suprise
+fetch.txt						surprise
+fol1							task:1
+fol2							task1
+fol3							task2
+rebase							Terminal Saved Output.txt
+23s1103@o-lt-004705 desktop % cd surprise
+23s1103@o-lt-004705 surprise % git init
+Reinitialized existing Git repository in /Users/23s1103/Desktop/surprise/.git/
+23s1103@o-lt-004705 surprise % git config user.name "patil"
+23s1103@o-lt-004705 surprise % git config user.email "patil@gmail.com"
+23s1103@o-lt-004705 surprise % touch apple.txt
+23s1103@o-lt-004705 surprise % ls
+apple.txt	README.md
+23s1103@o-lt-004705 surprise % touch micro.txt
+23s1103@o-lt-004705 surprise % git add .                                                       
+23s1103@o-lt-004705 surprise % git status                                                      
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   apple.txt
+	new file:   micro.txt
+
+23s1103@o-lt-004705 surprise % nano apple.txt                                                            
+23s1103@o-lt-004705 surprise % cat apple.txt
+git init
+git config user.name "patil"
+git config user.email "patil@gmail.com"
+touch a1.txt
+git add .
+git status
+git commit -m "added a1.txt" a1.txt
+23s1103@o-lt-004705 surprise % nano micro.txt
+23s1103@o-lt-004705 surprise % cat micro.txt
+git branch name
+git branch 
+git switch first
+git checkout -b
+git push origin origin branch name
+git merge branch name
+
+
+23s1103@o-lt-004705 surprise % git branch surprise
+23s1103@o-lt-004705 surprise % git branch         
+* main
+  surprise
+23s1103@o-lt-004705 surprise % git switch surprise
+A	apple.txt
+A	micro.txt
+Switched to branch 'surprise'
+23s1103@o-lt-004705 surprise % touch unix.txt 
+23s1103@o-lt-004705 surprise % ls
+apple.txt	micro.txt	README.md	unix.txt
+23s1103@o-lt-004705 surprise % git switch main
+A	apple.txt
+A	micro.txt
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+23s1103@o-lt-004705 surprise % git commit -m "added apple.txt" apple.txt
+[main 6e0d577] added apple.txt
+ 1 file changed, 7 insertions(+)
+ create mode 100644 apple.txt
+23s1103@o-lt-004705 surprise % git commit -m "added micro.txt" micro.txt
+[main f0f611b] added micro.txt
+ 1 file changed, 8 insertions(+)
+ create mode 100644 micro.txt
+23s1103@o-lt-004705 surprise % git switch surprise
+Switched to branch 'surprise'
+23s1103@o-lt-004705 surprise % nano unix.txt
+23s1103@o-lt-004705 surprise % cat unix.txt
+mkdir surprise
+cd surprise
+git init
+git config user.name "patil"
+git config user.email "patil@gmail.com"
+touch a1.txt
+git add .
+git status
+git commit -m "added a1.txt" a1.txt
+git log --oneline
+
+23s1103@o-lt-004705 surprise % git switch main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+23s1103@o-lt-004705 surprise % touch amazon.txt
+23s1103@o-lt-004705 surprise % add .
+zsh: command not found: add
+23s1103@o-lt-004705 surprise % git add .
+23s1103@o-lt-004705 surprise % git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   amazon.txt
+	new file:   unix.txt
+
+23s1103@o-lt-004705 surprise % ls
+amazon.txt	apple.txt	micro.txt	README.md	unix.txt
+23s1103@o-lt-004705 surprise % git commit "added amazon.txt" amazon.txt
+error: pathspec 'added amazon.txt' did not match any file(s) known to git
+23s1103@o-lt-004705 surprise % git commit -m "added amazon.txt" amazon.txt
+[main b3c0527] added amazon.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 amazon.txt
+23s1103@o-lt-004705 surprise % nano amazon.txt
+23s1103@o-lt-004705 surprise % cat amazon.txt
+hi mam thes friday in ttti thare is a sports day please come for that which are those game men's football,criket 
+kho kho ,basketball,troball ,volyball ,plese give the permison for go for playing in (toyota technical trainig institut
+
+
+23s1103@o-lt-004705 surprise % git branch
+* main
+  surprise
+23s1103@o-lt-004705 surprise % git merge surprise
+Already up to date.
+23s1103@o-lt-004705 surprise % ls
+amazon.txt	apple.txt	micro.txt	README.md	unix.txt
+23s1103@o-lt-004705 surprise % git branch -m main master
+23s1103@o-lt-004705 surprise % git branch
+* master
+  surprise
+23s1103@o-lt-004705 surprise % history   
+ 1227  cat unix.txt
+ 1228  git switch main
+ 1229  touch amazon.txt
+ 1230  add .
+ 1231  git add .
+ 1232  git status
+ 1233  ls
+ 1234  git commit "added amazon.txt" amazon.txt
+ 1235  git commit -m "added amazon.txt" amazon.txt
+ 1236  nano amazon.txt
+ 1237  cat amazon.txt
+ 1238  git branch
+ 1239  git merge surprise
+ 1240  ls
+ 1241  git branch -m main master
+ 1242  git branch
+23s1103@o-lt-004705 surprise % 
